@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student to add</title>
+</head>
+<body>
+    <h3> Enter new student data: </h3> <br>
+    <form method="POST"> 
+        {% csrf_token %}
+        <table>
+            {{ form.as_table }}            
+        </table>
+        <br><br>
+        <button type="submit"> New student </button>        
+    </form>
+</body>
+</html>
